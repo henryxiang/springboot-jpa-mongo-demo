@@ -10,7 +10,6 @@ public class User {
     private String name;
 
     @OneToMany(cascade = CascadeType.ALL)
-//    @JoinColumn(name = "USER_ID")
     @JoinTable(
         name = "USER_ROLE",
         joinColumns = @JoinColumn(name = "USER_ID"),
